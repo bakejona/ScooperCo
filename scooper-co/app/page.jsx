@@ -3,7 +3,6 @@ import Link from "next/link";
 export default function HomePage() {
   return (
     <>
-      {/* Hero Section */}
       <section id="hero" className="hero">
         <div className="hero-content">
           <h1>Keep Your Yard Clean, Safe & Odor-Free</h1>

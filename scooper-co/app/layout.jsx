@@ -1,9 +1,8 @@
 import "./globals.css";
-import Link from "next/link";
 
 export const metadata = {
-  title: "Scooper",
-  description: "Professional pet waste removal services for busy pet owners",
+  title: "ScooperCo - Pet Waste Removal",
+  description: "Professional Pet Waste Removal Services",
 };
 
 export default function RootLayout({ children }) {
@@ -12,7 +11,7 @@ export default function RootLayout({ children }) {
       <body>
         <header>
           <a href="#hero" className="logo">
-            Scooper Co.
+            ScooperCo
           </a>
           <nav>
             <a href="#services">Services</a>
@@ -20,12 +19,10 @@ export default function RootLayout({ children }) {
             <a href="#contact">Contact</a>
           </nav>
         </header>
-
-        <main className="min-h-screen">{children}</main>
-
-        <footer className="bg-gray-100 p-4 text-center">
+        {children}
+        <footer>
           <p>
-            &copy; {new Date().getFullYear()} Scooper Co. All Rights Reserved.
+            &copy; {new Date().getFullYear()} ScooperCo. All Rights Reserved.
           </p>
         </footer>
       </body>
